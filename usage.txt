@@ -1,0 +1,31 @@
+To test any API, ensure you set all headers
+content-type & Accept as application/json
+
+To create a WEBSITE POST
+
+http://127.0.0.1:8000/api/post/create-website-post
+BODY PAYLOAD
+
+{
+    "website_id": 1,
+    "post_title": "INISEV IS GOOD FOR DEVELOPERs",
+    "post_content": "Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:"
+}
+
+To Subscribe to a Website
+
+http://127.0.0.1:8000/api/website/subscribe
+BODY PAYLOAD
+
+{
+  "website_id":12,
+  "user_id":15
+}
+
+To test notification 
+http://127.0.0.1:8000/subscribe/notify
+
+Ensure you set the MAILER in .env.
+
+Cheers,
+Raheem
